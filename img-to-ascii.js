@@ -9,7 +9,7 @@ const density = "Ñ@#W$9876543210?!ABC;:+=-,._ ";
 let imagen;
 
 function preload() {
-  imagen = "gatito_preso48.jpg";
+  imagen = loadImage("./gatito_preso48.jpg");
 }
 
 function setup() {
@@ -18,5 +18,5 @@ function setup() {
 
 function draw() {
   background(220);
-  imagen(gloria, 0, 0, witdh, height);
+  image(imagen, 0, 0, witdh, height);
 }
